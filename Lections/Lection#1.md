@@ -1,55 +1,124 @@
-# Principios Basicos de HTML
+# Principios de Javascript
 
-## Definicion
-Es un lenguaje de marcado que se utiliza para el desarrollo de paginas de internet. Se trata de la sigla que corresponde a HyperText Markup Language, es decir, Lenguaje de Marcas de Hipertexto. 
+Javascript es un lenguaje de programación que se utiliza para crear páginas web interactivas. Una página web no es más que un documento que se muestra en un navegador web. Este documento puede ser escrito en HTML, CSS y Javascript. Al mismo tiempo este lenguaje tiene diversos usos en el area de la programacion como:
 
-## Funcion
-Este nos va permitir armar estructuras de nuestra pagina web, como si fuera una casa en construccion. Esta va a ser la base de todo y la que va a depender el diseño y como se muestra con el usuario.
+* Desarrollo de Aplicaciones Web
+* Desarrollo de Aplicaciones Móviles
+* Desarrolllo de IA
+* Desarrollo de Videojuegos
 
-## Como funciona HTML
-Para que nosotros podamos agregar contenido a nuestra pagina web, tenemos que usar **etiquetas y atributos**. Estas etiquetas son las que van a definir el contenido de nuestra pagina web.
+> En esta guia no nos enfocaremos a dar tantos tecnisismos y nos enfocaremos mas en lo que es la sintaxis.
 
-### Etiquetas
-Las etiquetas son aquellas palabras claves que nos ayudaran a poner diferentes tipos de contenido en nuestra pagina web. Normalmente siempre van a tener estas: <>, una etiqueta de apertura y una de cierre, pero hay algunas que no necesitan de una etiqueta de cierre. Ejemplo:
-    
-```html
-<!--Etiqueta con Apertura y Cierre-->
-<p> Hola Mundo </p>
-<!--Etiqueta con Apertura-->
-<br>
+## Sintaxis Basica de Javacript
+
+### Variables
+Cuando nosotros nos referimos variables para nosotros como programadores son aquellos espacios de almacenamiento para los datos. En pocas palabras podemos usar las variables para almacenar un dato temporal ya sea: texto,numero, booleano,etc. Para declarar una variable es necesario hacer lo siguiente:
+
+```js
+// Estructura de una variable
+var nombreVariable = 'Valor de la Variable';
 ```
-> **Recuerda:** que las etiquetas al momento de abrirlas se tienen que cerrar. Si no se cierran, el navegador no va a poder interpretar el codigo y no se va a mostrar el contenido.
+> **Ojo:** En Javascript no es necesario especificar el tipo de dato como en otros lenguajes
 
-### Atributos
-Los atributos son aquellas palabras claves que nos ayudaran a darle caracteristicas a nuestras etiquetas. Estos siempre van a tener esta estructura: 
+**Ejemplos de uso de las variables puede ser:**
+* Almacenar una edad
+* Almacenar el nombre de una persona
+* Almacenar la dirrecion de una empresa
+* Almacenar una fecha de cumpleaños
+* Almacenar numeros para sumarlos
 
-**nombre_atributo="valor"**. 
+### Como se verian las variables en codigo
 
-Ejemplo:
+![Variables y sus usos](/Assets/img/variables1.png)
 
-```html
-<!--Aqui estamos agregando un titulo en un enlace llamado Hello World-->
-<a title="Hello World"></a>
+> Como viste en el ejemplo en codigo existen diferentes tipos de datos y en este manual veremos algunos de los mas comunes y sencillos de aprender al principio
+
+## Tipos de Datos
+
+Recuerda que un dato es un fragmento de informacion con el que podemos manipular y realizar una ciertas acciones con el. A continuacion te mostrare algunos de ellos:
+
+### String
+Son aquellos datos que son conocidos como cadena de caracteres o texto, Aqui podemos **almacenar cualquier tipo de texto** que nosotros queramos. Existen diferentes formas de escribirlos:
+
+```js
+var nombre= "Misael";
+var nombre2= 'Misael';
 ```
 
-## Estructura Basica de HTML
-Antes de continuar, tienes que saber que si quieres hacer un archivo de **html** tienes que usar una IDE (Integrated Development Environment) o un editor de texto.
+![String](/Assets/img/variables2.png)
 
-> EL mas recomendado es Visual Studio Code, ya que es muy completo y tiene muchas extensiones que te pueden ayudar a la hora de programar.
+### Number
 
-Ahora si, vamos a ver la estructura basica de HTML:
+En estos datos solo podemos almacenar lo que nosotros consideremos como **valores numericos** :
 
-![Estructura Basica de HTML](/assets/img/estructura_html.png)
++ Enteros
++ Decimales
++ Negativos
++ Positivos
 
-*  **Etiqueta Doctype:** Esta etiqueta es la que nos va a permitir definir la version de HTML que vamos a usar. En este caso, vamos a usar la version 5.
+**Se verian asi:**
 
-*  **Etiqueta HTML:** Esta etiqueta es la que nos va a permitir definir el contenido de nuestra pagina web.
+```js
+var num_1= 10;
+var num_2= 10.5;
+var num_3= -10;
+var num_4= -10.5;
+```
+### Objeto
+Este tipo de datos se usa para almacenar un **conjunto de datos** que nosotros consideremos como un objeto. Por ejemplo:
 
-* **Etiqueta meta:** Se utiliza para proporcionar información sobre el documento HTML que no se muestra directamente en la página web, pero que es importante para los navegadores web y otros agentes de usuario que procesan el documento
+```js
+//Nombre del Objeto
+var Misael={
+//Caracteristicas del Objeto 
+Nombre: "Misael",
+Edad: 18,
+Genero: 'Masculino'
+};
+```
+> **Ojo:** En este tipo de datos es necesario usar los dos puntos para separar el nombre de la caracteristica y la coma para separar las caracteristicas
 
-*  **Etiqueta Head:** Es aquella en la que su funcion es contener informacion sobre el documento y que no sea visible para el usuario.
+![Objeto](/Assets/img/variables4.png)
 
-*  **Etiqueta Body:** Es aquella en la que su funcion es contener informacion que va a ser visible para el usuario.
+### Date
+Este tipo de datos se usa para **almacenar una fecha**. Por ejemplo:
 
-### Notas
-Si quieres saber un poco mas sobre este apartado dirijete a: [Consejos Iniciales de HTML](/Lections/Extra.md)
+```js
+var dia_nacimiento= new Date(2004,09,30)
+```
+> Siempre se tiene que poner la palabra new y date para poder almacenar una fecha y separar los datos que estan dentro de la fecha con comas.
+
+![Date](/Assets/img/variables5.png)
+
+
+### Booleanos
+Este tipo de datos se usa para almacenar un valor de **verdadero o falso**. Por ejemplo:
+
+```js
+var condicion = true; 
+var condicion= false;
+```
+> **Ojo:** En este tipo de datos es necesario usar la palabra true o false para poder almacenar un valor booleano
+
+![Booleanos](/Assets/img/variables6.png)
+
+## Indefinidas
+
+Es aquella que ha sido declarada pero no ha sido inicializada con un valor. Por ejemplo, si declaras una variable de la siguiente manera:
+
+```js
+var numero;
+var nombre;
+```
+
+![Indefinidas](/Assets/img/variables7.png)
+
+## Nulas
+Este tipo de datos son aquellos en las que la variable esta declarada pero no asignada a **ningun valor**. Por ejemplo:
+
+```js
+var numero= null;
+var nombre= null;
+```
+
+![Nulas](/Assets/img/variables8.png)

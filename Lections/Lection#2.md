@@ -1,71 +1,100 @@
-# Estructura de una Pagina Web
+# Formas de Imprimir codigo
 
-Para que nosotros podamos crear una pagina web,tenemos que saber la estructura de sus elementos. A continuacion te mostrare la representacion de una:
+Cuando decimos la palabra **Impresion** nos referimos a mostrar en pantalla el codigo que nosotros queramos. Aqui se explicara las diferentes formas que hay para hacerlo.
 
-![Estructura de una Pagina Web](/assets/img/estructura_web.png)
+## Consola
+Una consola es aquella herramienta que nos permite ver los resultados de nuestro codigo en tiempo real de forma textual ya que esta no cuenta con interfaz grafica. Para acceder en ella necesitamos dos cosas:
+* **Un compilador** de archivos javascript (En este caso usaremos una extension)
+* Usar los **comandos especificos** para que se muestren los resultados
 
-## Explicacion de cada elemento
+> El compilador que puedes usar es una extension en vscode llamado **Code Runner** que te permite compilar codigo de diferentes lenguajes de programacion.
 
-- **Header:** Es la parte superior de la pagina web. En esta seccion se suele poner el logo de la pagina web, el menu de navegacion, etc.
+<br>
 
-- **Barra de Navegacion o Nav:** Es la parte en la que se suele poner los enlaces a otras paginas web o a otras secciones de la misma pagina web.
+![Code Runner](/Assets/img/code_runner.png)
 
-- **Body o Cuerpo:** Es la parte en la que se suele poner el contenido de la pagina web. Como imagenes, texto, videos, etc.
+### Comando para imprimir en consola
+El comando que se usa para imprimir en consola es **console.log()** y dentro de los parentesis se pone el texto que se quiere imprimir. Ejemplo:
 
-- **Barra Lateral o Aside:** Es la parte en la que se suele poner contenido que no es tan importante como el contenido del body. Como publicidad, enlaces a otras paginas web, etc.
-
-- **Footer:** Es la parte inferior de la pagina web. En esta seccion se suele poner informacion sobre la pagina web, enlaces a redes sociales, etc.
-
-> Cada una de estas partes contiene una etiqueta html **_propia_**
-
-## Etiquetas HTML de Estructura
-A continuacion te mostrare como seria en codigo html cada estructura de la pagina web.
-
-### Header
-
-```html
-<header>
-    <!-- Aqui va el contenido del header -->
-</header>
+```js
+//Imprimir texto
+console.log("Hola Mundo");
+//Imprimir valores de variables
+var nombre= "Lucia";
+console.log(nombre);
 ```
 
-### Nav
+![Consola](/Assets/img/Formas_Impresion.png)
 
-```html
-<nav>
-    <!-- Aqui va el contenido del nav -->
-</nav>
+## Archivos html
+Otra forma de imprimir codigo es mediante archivos html. Para ello necesitamos dos cosas:
+- Una estructura html basica o compleja
+- Un archivo javascript
+
+> Para crear un archivo javascript se necesita crear un archivo con extension **.js** y enlazarlo con el archivo html mediante la etiqueta **script**.
+
+## Etiqueta Script
+Esta nos ayudara a **enlazar nuestro codigo** javascript a nuestro archivo html y poder ver los cambios que hagamos en el futuro.
+
+![Script](/Assets/img/Formas_Impresion2.png)
+
+> Ahora ya que tengamos nuestro codigo enlazado es momento de mostrarte los comandos que puedes usar para mostrar tus resultados en tu pagina.
+
+### Prompt
+Este comando nos permite mostrar un mensaje en pantalla y a su vez nos permite ingresar un valor que se almacenara en una variable. Ejemplo:
+
+```js
+// Imprimir texto y almacenar el valor en una variable
+var nombre= prompt("Ingresa tu nombre");
 ```
 
-### Body
+![Prompt](/Assets/img/Formas_Impresion3.png)
 
-```html
-<body>
-    <!-- Aqui va el contenido del body -->
-</body>
+**Como se va a mostrar en tu pagina:**
+
+![Prompt](/Assets/img/prompt.png)
+
+### Alert
+Este comando nos permite mostrar un mensaje en pantalla pero no podemos ingresar un valor.
+    
+```js
+// Imprimir texto
+var hello= "Hola Mundo";
+alert(hello);
+``` 
+
+![Alert](/Assets/img/Formas_Impresion4.png)
+
+**Como se va a mostrar en tu pagina:**
+
+![Alert](/Assets/img/alert.png)
+
+### Document Write
+Este comando nos permite mostrar un mensaje en pantalla pero no podemos ingresar un valor.
+    
+```js
+// Imprimir Texto
+document.write("Misael");
+// Imprimir Variables
+var edad= 18;
+document.write(edad);
 ```
+> Este comando no es recomendado que se use debido a que los cambios en el futuro se boraran y no se podran ver.
 
-### Aside
+![Document.write](/Assets/img/document_write.png)
 
-```html
-<aside>
-    <!-- Aqui va el contenido del aside -->
-</aside>
-```
+### InnerHTML
+Este comando nos permite manipular un elemento de nuestro codigo html y mostrar el resultado donde esta la etiqueta que lo contiene.
 
-### Footer
+![Innerhtml](/Assets/img/get_element.png)
 
-```html
-<footer>
-    <!-- Aqui va el contenido del footer -->
-</footer>
-```
+![Innerhtml](/Assets/img/html_getelement.png)
 
-> Cada una de estas etiquetas html **_pueden contener otras etiquetas html que luego veremos mas adelante_**
 
-## Importancia de la Estructura de las Paginas Web
+> Para usar este comando se necesita que el elemento html tenga el mismo **ID** en el que se va a poner dentro del metodo.
 
-Porque es importante la estructura de las paginas web? Porque si no tenemos una buena estructura, el contenido de la pagina web no se vera bien y no tendra sentido. Por ejemplo, si ponemos el contenido del body en el **header**, el contenido del **body** se vera en la parte superior de la pagina web y no tendra sentido.
+**Asi se veria en la pagina:**
 
-## Comenzando con las etiquetas
-En la leccion siguiente veremos las etiquetas basicas de una pagina web con las que podras crear una pagina web basica. Las veremos poco a poco y trataremos de ser lo mas explicitos posibles.
+![Innerhtml](/Assets/img/pagina_inner.png)
+
+
