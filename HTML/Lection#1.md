@@ -38,7 +38,14 @@ Por ejemplo:
 | `<body>` | Esta etiqueta es la que abre el cuerpo del documento HTML |
 | `<meta>` | Esta etiqueta es la que se encarga de especificar algunas configuraciones para que nos reconozca el navegador nuestra pagina |
 
-<input type="button" name="Accion1" onclick="">Oprime Aqui</input>
+<button onclick="">Oprime Aqui</button>
+
+
 
 <script>
-<script>
+
+    function saludaUsuario(){
+        alert("Hola Usuario");
+    }
+
+</script>
