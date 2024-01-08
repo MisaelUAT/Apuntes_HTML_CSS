@@ -53,7 +53,7 @@ Son aquellas en las que se escribe el texto que se quiere mostrar en la pagina w
 | `<hr>`   | Es una etiqueta que sirve para hacer una linea horizontal | `<p> Este es un parrafo <hr> Este es otro parrafo </p>` | <p> Este es un parrafo <hr> Este es otro parrafo </p> |
 
 ## Etiquetas de Formato
-Estas etiquetas riven para que a nuestro texto tenga un cierto formato y se vea mas ordenado.
+Estas etiquetas sirven para que a nuestro texto tenga un cierto formato y se vea mas ordenado.
 
 | Etiqueta | Descripcion | Ejemplo | Mostrar |
 | -------- | ----------- | ------- | ------- |
@@ -66,6 +66,7 @@ Estas etiquetas riven para que a nuestro texto tenga un cierto formato y se vea 
 | `<small>`    | Es una etiqueta que sirve para poner el texto en un tamaño mas pequeño | `<p> Este es un <small>parrafo</small> </p>` | <p> Este es un <small>parrafo</small> </p> |
 | `<sub>`    | Es una etiqueta que sirve para poner el texto en subindice | `<p> Este es un <sub>parrafo</sub> </p>` | <p> Este es un  Subindice <sub>parrafo</sub> </p> |
 | `<sup>`    | Es una etiqueta que sirve para poner el texto en superindice | `<p> Este es un <sup>parrafo</sup> </p>` | <p> Este es un Superindice <sup>parrafo</sup> </p> |
+| `<span>`    | Es una etiqueta que sirve para agrupar elementos en linea, se utiliza a la hora de mezclar css y Javascript  debido a que no modifica la semantica. | `<p> Este es un <span>parrafo</span> </p>` | <p> Este es un <span>parrafo</span> </p> |
 
 
 
