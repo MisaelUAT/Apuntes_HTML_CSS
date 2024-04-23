@@ -46,7 +46,7 @@ En este apartado vamos a ver algunos tipos de etiquetas que nos ayudaran a darle
 Son aquellas en las que se escribe el texto que se quiere mostrar en la pagina web de forma que se formen parrafos y se vea ordenado.
 
 
-| Etiqueta | Descripcion | Ejemplo | Mostrar |
+| Etiqueta | Descripcion | Ejemplo | Como se mira |
 | -------- | ----------- | ------- | ------- |
 | `<p>`    | Es una etiqueta que sirve para escribir texto en forma de parrafo| `<p> Este es un parrafo </p>` | <p> Este es un parrafo </p> |
 | `<br>`   | Es una etiqueta que sirve para hacer un salto de linea | `<p> Este es un parrafo <br> Este es otro parrafo </p>` | <p> Este es un parrafo <br> Este es otro parrafo </p> |
@@ -67,8 +67,6 @@ Estas etiquetas sirven para que a nuestro texto tenga un cierto formato y se vea
 | `<sub>`    | Es una etiqueta que sirve para poner el texto en subindice | `<p> Este es un <sub>parrafo</sub> </p>` | <p> Este es un  Subindice <sub>parrafo</sub> </p> |
 | `<sup>`    | Es una etiqueta que sirve para poner el texto en superindice | `<p> Este es un <sup>parrafo</sup> </p>` | <p> Este es un Superindice <sup>parrafo</sup> </p> |
 | `<span>`    | Es una etiqueta que sirve para agrupar elementos en linea, se utiliza a la hora de mezclar css y Javascript  debido a que no modifica la semantica. | `<p> Este es un <span>parrafo</span> </p>` | <p> Este es un <span>parrafo</span> </p> |
-
-
 
 
 

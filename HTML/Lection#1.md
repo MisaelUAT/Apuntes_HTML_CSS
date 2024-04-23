@@ -1,7 +1,5 @@
 # Introduccion a HTML
 
-
-
 Tienes que saber primero que html no es un lenguaje de programacion, es un lenguaje de marcado, es decir, que no tiene logica, solo es una forma de darle formato a un texto. En este caso lo que queremos es darle un formato a una pagina web y darle un esqueleto. Para eso en este curso veremos cosas basicas de HTML. Este lenguaje utiliza etiquetas para agregar elementos a la pagina como: Tablas,Listas,Imagenes,Audio,Video,etc.
 
 ## ¿Como funcionan las Etiquetas?
