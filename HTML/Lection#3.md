@@ -21,9 +21,44 @@ Su estructura consiste en:
 ### Ejemplo
 
 ```html
-<img src="/Assets/img/HTML5.png" alt="Logo de HTML5" width="100" height="100">
+<img src="/Assets/img/HTML5.png" alt="Logo de HTML5" width="50" height="50">
 ```
 
 **Como se ve:**
 
 <img src="/Assets/img/HTML5.png" alt="Logo de HTML5" width="50" height="50">
+
+
+## Etiqueta de Video
+
+La etiqueta de video es una etiqueta que se utiliza para insertar videos en tu pagina web.
+
+### Estructura
+
+```html
+<video poster="URL de la imagen" controls autoplay loop>
+  <source src="URL del video" type="tipo de video">
+</video>
+```
+
+Su estructura consiste en:
+- **poster:** Es el atributo que se utiliza para indicar la URL de la imagen que se va a mostrar antes de que el video se reproduzca.
+- **controls:** Es el atributo que se utiliza para mostrar los controles del video. No se necesita especificar un valor.
+- **autoplay:** Es el atributo que se utiliza para que el video se reproduzca automaticamente. No se necesita especificar un valor.
+- **loop:** Es el atributo que se utiliza para que el video se reproduzca en bucle. No se necesita especificar un valor.
+
+> **Nota:** La etiqueta source se utiliza para indicar la URL del video y el tipo de video que se va a reproducir.
+
+### Ejemplo
+
+```html
+<video poster="/Assets/img/HTML5.png" controls autoplay loop>
+  <source src="/Assets/video/HTML5.mp4" type="video/mp4">
+</video>
+```
+
+Como se ve:
+
+<video poster="/Assets/img/HTML5.png" controls autoplay loop>
+  <source src="/Assets/videos/HTML_course.mp4" type="video/mp4">
+</video>
